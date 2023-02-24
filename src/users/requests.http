@@ -1,0 +1,15 @@
+### Create User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email":"a@fsoft.com",
+  "password":"12312",
+  "admin":true
+}
+
+### finUserBy ID
+GET http://localhost:3000/auth/1
+
+### Search User
+GET  http://localhost:3000/auth?email=a@fsoft.com
