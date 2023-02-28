@@ -3,13 +3,34 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email":"a@fsoft.com",
-  "password":"12312",
+  "email":"2a@ftsss.com",
+  "password":"manhaa",
   "admin":true
 }
 
-### finUserBy ID
-GET http://localhost:3000/auth/1
+### Create User
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
 
-### Search User
-GET  http://localhost:3000/auth?email=a@fsoft.com
+{
+  "email":"2a@ftsss.com",
+  "password":"manhaa",
+}
+
+
+### finUserBy ID
+GET http://localhost:3000/auth/7
+
+### Search User by
+GET  http://localhost:3000/auth?email=1
+
+### remove record
+DELETE  http://localhost:3000/auth/6
+
+### Update userr
+PATCH http://localhost:3000/auth/6
+Content-Type: application/json
+
+{
+  "email":"a@fsoft.cmmm",
+}
